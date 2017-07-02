@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Panels with Contextual Classes</h2>
+    <h2>Test 1 Panel</h2>
+    <h2>Test 2 Panel</h2>
+    <div class="panel-group">
+        <div id='main-panel' class="panel panel-default">
+            <div class="panel-heading">{{message}}</div>
+            <div class="panel-body">test panel content</div>
+        </div>
+    </div>
+    <button type="button" class="btn" (click)="getWebService()">Load Pokemons</button>
+    <button type="button" class="btn" (click)="removePokemons()">Remove Pokemons</button>
+    <div id="Pokemon-Panel">
+        <div class="panel-group">
+            <div id='pokemon-panel' class="panel panel-default" *ngFor="let obj of pokemon">
+                <div class="panel-heading">{{obj.name}}</div>
+                <div class="panel-body">
+                    <img src="{{obj.photoUrl_back_default}}" border="5">
+                    <img src="{{obj.photoUrl_back_shiny}}" border="5">
+                    <img src="{{obj.photoUrl_front_default}}" border="5">
+                    <img src="{{obj.photoUrl_front_shiny}}" border="5">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

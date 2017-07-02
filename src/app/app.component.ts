@@ -42,7 +42,8 @@ export class AppComponent {
                 pokemonResult.sprites.back_default,
                 pokemonResult.sprites.back_shiny,
                 pokemonResult.sprites.front_default,
-                pokemonResult.sprites.front_shiny
+                pokemonResult.sprites.front_shiny,
+                pokemonResult.weight
               );
               this.pokemon.push(pokemonObject)
             })

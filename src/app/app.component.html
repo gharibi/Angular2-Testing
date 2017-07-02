@@ -13,7 +13,7 @@
     <div id="Pokemon-Panel">
         <div class="panel-group">
             <div id='pokemon-panel' class="panel panel-default" *ngFor="let obj of pokemon">
-                <div class="panel-heading">{{obj.name}}</div>
+                <div class="panel-heading">{{obj.name}} - {{obj.weight}}</div>
                 <div class="panel-body">
                     <img src="{{obj.photoUrl_back_default}}" border="5">
                     <img src="{{obj.photoUrl_back_shiny}}" border="5">
